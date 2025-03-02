@@ -35,41 +35,42 @@ const RegisterForm = () => {
 
 
     return (
-        <form className="form" >
-            <label htmlFor="email" className="label">
-                Email: admin@admin
-            </label>
-            <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                className="input"
+        <div className="form-container">
+            <form className="form" >
+                <label htmlFor="email" className="label">
+                    Email: admin@admin
+                </label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    className="input"
 
-                onChange={e => setLoginData(prev => ({
-                    ...prev, email: e.target.value
-                }))}
-                value={loginData.email}
-            />
-            <label htmlFor="password" className="label">
-                Password: 1234
-            </label>
-            <input
-                type="password"
-                id="password"
-                name="password"
-                required
-                className="input"
+                    onChange={e => setLoginData(prev => ({
+                        ...prev, email: e.target.value
+                    }))}
+                    value={loginData.email}
+                />
+                <label htmlFor="password" className="label">
+                    Password: 1234
+                </label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    required
+                    className="input"
 
-                onChange={e => setLoginData(prev => ({
-                    ...prev, password: e.target.value
-                }))}
-                value={loginData.password}
-            />
-            <button className="submit" onClick={e => handleRegister(e)}>
-                login
-            </button>
-        </form>
+                    onChange={e => setLoginData(prev => ({
+                        ...prev, password: e.target.value
+                    }))}
+                    value={loginData.password}
+                />
+                <button className="submit" onClick={e => handleRegister(e)}>
+                    login
+                </button>
+            </form></div>
     );
 };
 
