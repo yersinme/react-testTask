@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
-import { Route, Router, useNavigate } from "react-router-dom";
+import { Route, useNavigate } from "react-router-dom";
 import MenuAside from "./components/Aside/Menu.aside";
+import Router from "./components/Router";
 
 const Home = () => {
     const isAdmin = useSelector((state: any) => state.auth.email); // Используем `any` для упрощения
@@ -17,7 +18,7 @@ const Home = () => {
     return (
         <>
         <div className="grid">
-            <MenuAside /><p>dsd</p>
+            <MenuAside /><h1 className="title">Главная страница</h1>
         </div>
         </>
     );

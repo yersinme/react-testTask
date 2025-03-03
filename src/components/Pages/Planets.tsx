@@ -3,7 +3,7 @@ import React from "react";
 const Planets = () => {
     return (
         <>
-        <h2>Планеты</h2>
+        <h2 className="title">Планеты</h2>
         </>
     )
 }

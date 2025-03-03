@@ -3,7 +3,7 @@ import React from "react";
 const Personage = () => {
     return (
         <>
-            <h2>Персонажи</h2>
+            <h2 className="title">Персонажи</h2>
         </>
     )
 }
